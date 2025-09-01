@@ -11,7 +11,7 @@ public class Tela
 
 
     //
-    // método
+    // métodos
     //
     public Tela(int lar, int alt, Coordenada coord, ConsoleColor ct, ConsoleColor cf)
     {
@@ -21,8 +21,6 @@ public class Tela
         this.corTexto = ct;
         this.corFundo = cf;
     }
-
-
     public void MontarMoldura(Coordenada cse, Coordenada cid)
     {
         int linha, coluna;
