@@ -1,14 +1,14 @@
 public class Livro
 {
-    //propriedades
+    // propriedades
     public string isbn;
     public string titulo;
     public string autor;
     public int paginas;
 
 
-    //métodos
-    public Livro(string cod, string tit, string aut, int pag)
+    // métodos
+    public Livro(string cod="", string tit="", string aut="", int pag=0)
     {
         isbn = cod;
         titulo = tit;
