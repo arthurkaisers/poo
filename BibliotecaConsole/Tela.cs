@@ -41,7 +41,7 @@ public class Tela
             for (int y = linini; y <= linfin; y++)
             {
                 Console.SetCursorPosition(x, y);
-                Console.Write(" "); 
+                Console.Write(" ");
             }
         }
     }
@@ -49,6 +49,8 @@ public class Tela
 
     public void MontarMoldura(int colini, int linini, int colfin, int linfin)
     {
+        this.LimparArea(colini, linini, colfin, linfin);
+
         for (int coluna = colini; coluna <= colfin; coluna++)
         {
             Console.SetCursorPosition(coluna, linini);
@@ -113,5 +115,14 @@ public class Tela
         }
     }
 
+
+    public string Perguntar(int coluna, int linha, string pergunta)
+    {
+        string resposta;
+        Console.SetCursorPosition(coluna, linha);
+        Console.Write(pergunta);
+        resposta = Console.ReadLine();
+        return resposta;
+    }
 
 }

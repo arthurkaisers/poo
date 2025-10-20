@@ -1,32 +1,32 @@
-public class LivroCRUD
+public class AlunoCRUD
 {
     //
     // Propriedades
     //
     private int colini, linini, linper;
     private List<string> dados;
-    private List<Livro> biblioteca;
-    private Livro livro;
+    private List<Aluno> biblioteca;
+    private Aluno aluno;
     private int indice;
 
 
     //
     // Métodos
     //
-    public LivroCRUD(int col, int lin)
+    public AlunoCRUD(int col, int lin)
     {
         this.colini = col;
         this.linini = lin;
 
         this.dados = new List<string>();
-        this.dados.Add("ISBN    : ");
-        this.dados.Add("Título  : ");
-        this.dados.Add("Autor   : ");
-        this.dados.Add("Páginas : ");
+        this.dados.Add("Matricula    : ");
+        this.dados.Add("Nome         : ");
+        this.dados.Add("Email        : ");
+        this.dados.Add("Telefone     : ");
         this.linper = linini + this.dados.Count + 1;
 
-        this.biblioteca = new List<Livro>();
-        this.livro = new Livro();
+        this.biblioteca = new List<Aluno>();
+        this.aluno = new Aluno();
         this.indice = -1;
     }
 
@@ -55,8 +55,8 @@ public class LivroCRUD
                 if (resp.ToLower() == "s")
                 {
                     this.biblioteca.Add(
-                        new Livro(this.livro.isbn, this.livro.titulo,
-                            this.livro.autor, this.livro.paginas
+                        new Aluno(this.aluno.matricula, this.aluno.nome,
+                            this.aluno.email, this.aluno.telefone
                         ));
                 }
             }
@@ -78,18 +78,18 @@ public class LivroCRUD
         if (qual == 1)
         {
             Console.SetCursorPosition(coluna, linha);
-            this.livro.isbn = Console.ReadLine();
+            this.aluno.matricula = Console.ReadLine();
         }
         else
         {
             Console.SetCursorPosition(coluna, linha);
-            this.livro.titulo = Console.ReadLine();
+            this.aluno.nome = Console.ReadLine();
             linha++;
             Console.SetCursorPosition(coluna, linha);
-            this.livro.autor = Console.ReadLine();
+            this.aluno.email = Console.ReadLine();
             linha++;
             Console.SetCursorPosition(coluna, linha);
-            this.livro.paginas = int.Parse(Console.ReadLine());
+            this.aluno.telefone = Console.ReadLine();
         }
     }
 
@@ -100,7 +100,7 @@ public class LivroCRUD
 
         for (int i = 0; i < this.biblioteca.Count; i++)
         {
-            if (this.biblioteca[i].isbn == this.livro.isbn)
+            if (this.biblioteca[i].matricula == this.aluno.matricula)
             {
                 this.indice = i;
                 encontrei = true;
@@ -117,11 +117,11 @@ public class LivroCRUD
         int coluna = this.colini + this.dados[0].Length + 1;
         int linha = this.linini;
         Console.SetCursorPosition(coluna, linha+2);
-        Console.Write(this.biblioteca[this.indice].titulo);
+        Console.Write(this.biblioteca[this.indice].nome);
         Console.SetCursorPosition(coluna, linha+3);
-        Console.Write(this.biblioteca[this.indice].autor);
+        Console.Write(this.biblioteca[this.indice].email);
         Console.SetCursorPosition(coluna, linha+4);
-        Console.Write(this.biblioteca[this.indice].paginas);
+        Console.Write(this.biblioteca[this.indice].telefone);
     }
 
 

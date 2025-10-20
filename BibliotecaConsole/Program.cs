@@ -1,4 +1,5 @@
-﻿LivroCRUD livros = new LivroCRUD(19, 5);
+﻿LivroCRUD livros = new LivroCRUD(15, 3);
+AlunoCRUD alunos = new AlunoCRUD(15, 3);
 
 List<string> opcoes = new List<string>();
 opcoes.Add("1 - Empréstimos");
@@ -16,6 +17,8 @@ while (true)
     op = tela.MostrarMenu(opcoes, 2, 1);
 
     if (op == "0") break;
+
+    if (op == "2") alunos.ExecutarCRUD();
 
     if (op == "3") livros.ExecutarCRUD();
 }

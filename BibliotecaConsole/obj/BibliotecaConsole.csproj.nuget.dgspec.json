@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\arthur07.silva\\Desktop\\Projetos\\SistemaBiblioteca\\BibliotecaConsole\\BibliotecaConsole.csproj": {}
+    "C:\\Users\\arthur07.silva\\Desktop\\Projetos\\SistemaBiblioteca\\poo\\BibliotecaConsole\\BibliotecaConsole.csproj": {}
   },
   "projects": {
-    "C:\\Users\\arthur07.silva\\Desktop\\Projetos\\SistemaBiblioteca\\BibliotecaConsole\\BibliotecaConsole.csproj": {
+    "C:\\Users\\arthur07.silva\\Desktop\\Projetos\\SistemaBiblioteca\\poo\\BibliotecaConsole\\BibliotecaConsole.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\arthur07.silva\\Desktop\\Projetos\\SistemaBiblioteca\\BibliotecaConsole\\BibliotecaConsole.csproj",
+        "projectUniqueName": "C:\\Users\\arthur07.silva\\Desktop\\Projetos\\SistemaBiblioteca\\poo\\BibliotecaConsole\\BibliotecaConsole.csproj",
         "projectName": "BibliotecaConsole",
-        "projectPath": "C:\\Users\\arthur07.silva\\Desktop\\Projetos\\SistemaBiblioteca\\BibliotecaConsole\\BibliotecaConsole.csproj",
+        "projectPath": "C:\\Users\\arthur07.silva\\Desktop\\Projetos\\SistemaBiblioteca\\poo\\BibliotecaConsole\\BibliotecaConsole.csproj",
         "packagesPath": "C:\\Users\\arthur07.silva\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\arthur07.silva\\Desktop\\Projetos\\SistemaBiblioteca\\BibliotecaConsole\\obj\\",
+        "outputPath": "C:\\Users\\arthur07.silva\\Desktop\\Projetos\\SistemaBiblioteca\\poo\\BibliotecaConsole\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
